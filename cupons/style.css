@@ -1,0 +1,129 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: arial, Sans-Serif;
+	/*border: solid red;*/
+}
+main{
+	display:flex;
+	flex-direction: column;
+	height:100vh;
+	background-color: #ccc;
+  
+}
+header{
+	display:flex;
+	justify-content: space-between;
+	font-size:1.5em;
+	border-bottom:2px solid #ccc;
+	background-color: #fff;
+}
+.menu{
+	color: black;
+	margin: 20px;
+}
+content{
+	display:flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	text-align: center;
+	height: 100%;
+	align-items: center;
+	overflow: auto;
+	margin:10px;
+}
+
+.cupom{
+	width:100%;
+	min-height: 130px;
+	max-height: 130px;
+	display:flex;
+	margin: 0 0 20px 0;
+	justify-content: space-between;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+	background-color:#fff;
+	-webkit-mask-image: radial-gradient(circle at 5px, transparent 5px, red 5.5px);
+	-webkit-mask-position: -5px;
+	-webkit-mask-size: 100% 17px;
+	
+}
+
+.lanche:nth-child(even){
+	background-color: #f7f7f7;
+}
+.img{
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70px;
+    background-color: #711333;
+    align-items: center;
+    justify-content: center;
+	
+
+}
+.descInfo{
+	text-align:center;
+	display:flex;
+	flex-direction:row-reverse;
+	transform: rotate(90deg);
+	color:#fff;
+}
+.textdesconto{
+	font-size: initial;
+}
+.description{
+	display:flex;
+	flex-direction: column;
+    justify-content: space-around;
+	text-align:left;
+	width:50%;
+	padding:5px 10px;
+	color:#221f20;
+	
+}
+
+p{
+	font-size:0.8em;
+	color:#221f20;
+}
+.bold{
+	font-weight: 900;
+}
+
+.grupoAdd{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.preco{
+	font-size: 1em;
+	font-weight: bold;
+	color:#221f20;
+}
+
+.icon{
+	display:flex;
+	justify-content: center;
+	width:100px;
+	height:50px;
+	font-size: 2em;
+	align-items: center;
+	background-color: #711333;
+    color: white;
+	clip-path: polygon(0% 50%, 20% 0%, 100% 0%, 100% 100%, 20% 100%);
+	
+}
+
+footer{
+	display:flex;
+	justify-content: space-between;
+	font-size:1em;
+	margin-top:auto;
+	background-color:#fff;
+	width:100%;
+	/*position:fixed;
+	bottom:0;*/
+}
